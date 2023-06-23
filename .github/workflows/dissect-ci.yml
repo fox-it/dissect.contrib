@@ -28,4 +28,3 @@ jobs:
   trigger-tests:
     needs: [publish]
     uses: fox-it/dissect-workflow-templates/.github/workflows/dissect-ci-demand-test-template.yml@DIS-2016_remove-iodc-from-publishing
-    secrets: inherit
