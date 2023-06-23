@@ -8,6 +8,7 @@ jobs:
       run_tests: false
       run_linting: false
     secrets: inherit
+
   publish:
     if: ${{ github.ref_name == 'main' || github.ref_type == 'tag' }}
     needs: [ci]
@@ -23,3 +24,8 @@ jobs:
       # According to the documentation, it automatically looks inside the `dist/` folder for packages.
       - name: Publish package distributions to Pypi
         uses: pypa/gh-action-pypi-publish@release/v1
+
+  trigger-tests:
+    needs: [publish]
+    uses: fox-it/dissect-workflow-templates/.github/workflows/dissect-ci-demand-test-template.yml@DIS-2016_remove-iodc-from-publishing
+    secrets: inherit
