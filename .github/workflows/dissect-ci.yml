@@ -3,7 +3,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   ci:
-    uses: fox-it/dissect-workflow-templates/.github/workflows/dissect-ci-template.yml@DIS-2016_remove-iodc-from-publishing
+    uses: fox-it/dissect-workflow-templates/.github/workflows/dissect-ci-template.yml@main
     with:
       run_tests: false
       run_linting: false
