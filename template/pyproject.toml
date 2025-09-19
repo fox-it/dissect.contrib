@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=65.5.0", "setuptools_scm[toml]>=6.4.0"]
+requires = ["setuptools>=77.0.0", "setuptools_scm[toml]>=6.4.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -11,7 +11,8 @@ description = "This is a template useful for creating your own dissect contrib p
 readme = "README.md"
 requires-python = ">=3.10"
 # Replace with a short string describing the license you use
-license.text = "Your license"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE", "COPYRIGHT"]
 # REplace with your name & e-mail address
 authors = [
   {name = "Your Name", email = "your-email@example.com"}
@@ -37,10 +38,6 @@ profile = "black"
 # Replace 'template' with the actual name of your project
 known_first_party = ["dissect.contrib.template"]
 known_third_party = ["dissect"]
-
-[tool.setuptools]
-# Specify all files that describe licenses used and copyrights held here
-license-files = ["LICENSE", "COPYRIGHT"]
 
 [tool.setuptools.packages.find]
 # This governs the files included in the wheel distribution of your project.
