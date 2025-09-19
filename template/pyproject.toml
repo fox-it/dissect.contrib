@@ -9,7 +9,7 @@ name = "dissect.contrib.template"
 description = "This is a template useful for creating your own dissect contrib packages"
 # Specify the README file used, e.g. README, README.rst, README.md etc.
 readme = "README.md"
-requires-python = "~=3.9"
+requires-python = ">=3.10"
 # Replace with a short string describing the license you use
 license.text = "Your license"
 # REplace with your name & e-mail address
