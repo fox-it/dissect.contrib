@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "dissect.contrib"
 description = "This project is a meta package: it reserves the namespace for Dissect packages made by external contributors"
 readme = "README.md"
-requires-python = "~=3.9"
+requires-python = ">=3.10"
 license.text = "Affero General Public License v3"
 authors = [
   {name = "Dissect Team", email = "dissect@fox-it.com"}
